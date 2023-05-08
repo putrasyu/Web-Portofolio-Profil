@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio rofile</title>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        background: rgb(1, 13, 56);
+    }
+    .hover {
+        background: aqua;
+        width: 40px;
+        height: 35px;
+        border: 1px solid white;
+        border-radius: 15%;
+        display: flex;
+        position: fixed;
+        bottom: 1%;
+        right: 1%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .hover a {
+        text-decoration: none;
+        list-style-type: none;
+        
+    }
+    .profile{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+    nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: #033c75;
+    color: #fff;
+    padding: 0 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 7px 16px aqua;
+}
+
+    ul{
+        font-family: "Chivo Mono", monospace;
+        display: flex;
+        gap: 72px;
+        padding-right: 100px;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    ul li a{
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        padding: 10px;
+        transition: 0.5s ease;
+        
+    }
+ :root{
+    scroll-behavior: smooth;
+ }
+
+    ul:hover li a:not(:hover){
+        color: white;
+        opacity: 0.3s;
+        filter: blur(3px);
+    }
+    li:hover{
+        border-bottom: 2px solid aqua;
+    }
+    ul:hover li a{
+        color: aqua;
+    }
+    .Name{
+        padding: 10px;
+        padding-left: 100px;
+        display: flex;
+        flex-direction: row;
+    }
+    .fname{
+        color: white;
+        font-weight: bolder;
+    }
+    .lname{
+        padding-left: 5px;
+        font-weight: bolder;
+        color: aqua;
+    }
+    p{
+        color: white;
+        font-weight: bold;
+       
+    }
+
+
+    
+    #nama{
+        font-size: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s infinite  alternate-reverse;
+    }
+    @keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+    }
+    #nama1{
+        color:aqua
+    }
+    span{
+        color: aqua;
+    }
+    .kotak1{
+        margin-left: 75px;
+        margin-top: 100px;
+    }
+    
+    /* RESPONSIVE CSS */
+    @media only screen and (max-width: 768px) {
+      .kotak1 {
+        margin-top: 150px;
+        margin-left: 50px;
+      }        
+      #nama {
+        font-size: 24px;
+      }
+      p {
+        font-size: 12px;
+      }
+      ul {
+        gap: 30px;
+        padding-right: 30px;
+      }
+    }
+    
+       
+    @media only screen and (max-width: 576px) {
+      .kotak1 {
+        margin-top: 100px;
+        margin-left: 20px;        
+        padding-right: 10px;
+      }
+
+      @media only screen and (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    border-radius: 0;
+  }
+  
+  .Name {
+    padding: 20px;
+  }
+  
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  ul li a {
+    padding: 10px 0;
+  }
+  
+  .profile1 {
+    width: 300px;
+    height: 300px;
+    margin: 50px 0;
+  }
+  
+  #text1 {
+    margin: 50px 0;
+  }
+}
+
+    }
+    .profile1{
+        width: 475px;
+        height: 425px;
+        margin-top: 75px;
+        margin-left: 100px;
+        border-radius: 50%;
+        border: black 1px solid;       display: flex;
+        flex-direction: row;
+       
+    }
+    img{
+        animation: gambar 1s infinite alternate;
+    }
+  @keyframes gambar{
+    to{
+        box-shadow: 0;
+    }
+    from{
+        box-shadow: 0 7px 16px aqua;
+    }
+  }
+    
+    #text1{
+        width: 400px;
+        height: 150px;
+        margin-right: 0;
+        margin-top: 210px;
+    }
+   
+</style>
+</style>
+<body>
+    <section>
+    <nav>
+        <div class="Name">
+            <div class="fname">Putra</div>
+            <div class="lname">Manahan</div>
+        </div>
+        <ul>
+            <li><a href="index.html#profile">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="profile" class="profile">
+    <div class="kotak1">
+    <p>Hallo,Aku <p id="nama">Putra<span>Manahan</span></p><p>Web<span>Designer</span></p><p>UI/<span>UX</span>Designer</p>
+    <p id="text1">Saya dari <span>Binjai</span><br>Saya pelajar dari <span>Putra Anda Binjai</span><br>Dan PKL Di <span>KitaKale Course</span></p>
+    </div>
+    <img class="profile1" src="Gambar/putra.jpg" alt="">    
+
+    </div>
+    <a href="index.html#profile"><button class="hover">^</button></a>
+    </section>
+    
+<style>
+    .about{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .about1{
+        border-radius: 50%;
+        border: rgb(59, 206, 206) 1px solid;
+        width: 275px;
+        height: 350px;
+        margin-top: 150px;
+        margin-left: 200px;   
+        box-shadow: 0 5px 0 aqua;   
+        animation: none;  
+    }
+    .text-about{
+        color: white;
+        margin-top: 165px;
+        width:50vw;
+        height: 50vh;
+        margin-left: 125px;
+
+    }
+    .about-1{
+        color: aqua;
+    }
+    .button1{
+        background: aqua;
+        width: 150px;
+        height: 40px;
+        border-radius: 16px;
+        font-weight: bolder ;
+        border: aqua;
+    }
+    .button1:hover{
+        background: white;
+        cursor: pointer;
+    }
+</style>
+    <section>
+        <div id="about" class="about">
+            <img class="about1" src="Gambar/putra.jpg">
+            <div class="text-about">
+                <h2>About <span class="about-1">Me</span></h2>
+                <h3>Front End <span class="about-1">Developer!</span></h3>
+                <p>Saya adalah seorang Frontend Developer yang berpengalaman dan berkualitas, dengan kemampuan yang mendalam dalam HTML, CSS, dan JavaScript. Saya siap untuk bekerja sama dengan tim untuk menciptakan aplikasi web atau mobile yang luar biasa dengan pengalaman pengguna yang optimal. Jika Anda memerlukan layanan Frontend Development, jangan ragu untuk menghubungi saya.</p>
+                <button class="button1">More About Me</button>
+            </div>
+          </div>
+    </section>
+    <style>
+        .skills{
+            width: 100vw;
+            height: 100vh; 
+            display: flex;
+            flex-direction: row;
+        }
+        .galeri-class img{
+            margin-top: -50px;
+            padding: 10px;
+            box-shadow: 0 0 10px aqua;
+            border-radius: 15px ;
+            width: 280px;
+            height: 150px;
+        }
+        .galeri-class{
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            letter-spacing: 10px;
+            height: 500px;
+            width: 100vw;
+            margin-top: 10%;
+            margin-left: -175px;
+        }
+        .skills2{
+            width:150px;
+            height: 100px;
+            color: white;
+            margin-top: 80px;
+            margin-left: 20px;
+            animation: skills 1s infinite alternate ;
+        }
+        @keyframes skills{
+            to{
+                text-shadow: 0 0 0 aqua;
+            }
+            from{
+                text-shadow: 0 0 5px aqua;
+            }
+        }
+        .box{
+           margin-left: 10px;
+           width: 280px;
+           font-size: 15px;
+           font-family: Arial, Helvetica, sans-serif;
+           padding:0;
+        }
+        button{ 
+        background: aqua;
+        width: 150px;
+        height: 40px;
+        border-radius: 16px;
+        font-weight: bolder ;
+        border: aqua;
+        }
+        button:hover{
+            background: white;
+            cursor: pointer;
+        }
+        .hobby{
+            width: 100vw;
+            height: 75vh;
+        }
+    </style>
+    <section>
+        <div id="skills" class="skills">
+            <h2 class="skills2">My <span>Skills:</span></h2>
+            <div class="galeri-class">
+                <div class="box box1">
+                <img src="Gambar/css.jpeg">
+                <p>Saya sudah menguasai sebagian tentang CSS dan sudah bisa mengedit atau mengatur sebuah website supaya lebih cantik.....</p>
+                <button>Read More</button>
+                </div>
+                <div class="box box2">
+                <img src="Gambar/html.webp">
+                <p>Sudah pasti saya udah menguasi tentang HTML sehingga saya sudah bisa membuat website portofolio ini.....</p>
+                <button>Read More</button>
+                </div>
+                <div class="box box3">
+                <img src="Gambar/UI.png">
+                <p>Saya masih belum terlalu mahir tapi saya sudah tau sedikit-sedikit tentang UI/UX.....</p>
+                <button>Read More</button>
+                </div>
+            </div>
+           
+        </div>
+    
+        <style>
+            .web{
+                color: white;
+            }
+            .hobby p{
+                color:rgb(192, 190, 190);
+                margin-left: 25px;
+                padding: 2px;
+                margin-top: -20px;
+            }
+        </style>
+        <div class="hobby">
+            <h2 class="skills2">My <span>Hobby:</span></h2>
+            <p><span class="web">Web</span><span> Design</span> Saya sudah pernah mendesain sebuah website absensi online dan lainnya</p>
+            <p><span class="web">Membaca</span><span> Buku</span> Saya suka membaca buku tentang sejarah perang maupun buku-buku cerita</p>
+            <p><span class="web">Mendengar</span><span> Musik</span> Saya suka mendengarkan musik apalagi musik bertema Electronic music</p>
+        </div>
+    </section>
+    <style>
+        .contact{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .contact1{
+            width:300px;
+            height: 125px;
+            font-size: 40px;
+            color: white;
+            margin-top: 150px;
+            margin-left: 525px;
+            animation: skills 1s infinite alternate ;
+        }
+        .pembungkus{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+        }
+        .kotak{
+            width: 300px;
+            height: 200px;
+            border: rgb(182, 179, 179) solid 3px;
+            margin: 50px;
+            border-radius: 12px;
+            background: rgb(27, 120, 136);
+        }
+        .contact2{
+            width: 75px;
+            height: 75px;
+            margin-left: 40%;
+            margin-top: 25px;
+        }
+        .contact2{
+            animation: none;
+        }
+        .wa1{
+            color: rgb(192, 188, 188);
+            margin-left: 22%;
+            
+        }
+        .kotak:hover{
+            box-shadow: 0 0 16px aqua;
+        }
+         a{
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .fb1{
+            color: rgb(192, 188, 188);
+            margin-left: 37%;
+        }
+        .email1{width: 75px;
+            height: 75px;
+            color: rgb(192, 188, 188);
+        }
+        .contact3{
+            width: 125px;
+            height: 90px;
+            margin-top: 12px;
+            margin-left: 31%;
+        }
+    </style>
+    <section>
+        <div id="contact" class="contact">
+            <h2 class="contact1">Contact<span> Me:</span></h2>
+            <div class="pembungkus">
+                <a href="https://api.whatsapp.com/send/?phone=083180813201&text&type=phone_number&app_absent=0">
+                    <div class="kotak wa">
+                    <img class="contact2" src="Gambar/wa.png">
+                    <p class="wa1">WA.me/083180813201</p>
+                </a>
+                </div>
+               
+                <a href="https://web.facebook.com/jinx.putra.167">
+                    <div class="kotak fb">
+                    <img class="contact2" src="Gambar/fb.png">
+                    <p class="fb1">Putra_Syu</p>
+                </a>
+                    </div>
+               
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=putramanahan.rpl22%40gmail.com">
+                <div class="kotak email">
+                    <img class="contact2 contact3" src="Gambar/email.png">
+                    <p class="email1">Putramanahan.rpl22@gmail.com</p>
+                </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <style>
+        .footer{
+            color: white;
+            background: rgb(4, 163, 163);
+            width: 100vw;
+            height: 20vh;
+            padding: 0;
+            text-align: center;
+            border-top-right-radius: 35%;
+            border-top-left-radius: 35%;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+        }
+       .contact4{
+            width: 75px;
+            height: 75px;
+            animation: none;
+            transition: all 0.3s ease;
+       }
+       .contact4:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        box-shadow: 0 0 10px aqua;
+       }
+    </style>
+    <section>
+        <div class="footer">
+            <p>2023 All Rights Reversed-Putra Manahan T Purba</p>
+            <div class="social-icons">
+                <div class="social-icon">
+                    <a href="https://api.whatsapp.com/send/?phone=083180813201&text&type=phone_number&app_absent=0"><img class="contact4" src="Gambar/wa.png"></a>
+                    <a href="https://web.facebook.com/jinx.putra.167"><img class="contact4" src="Gambar/fb.png"></a>
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=putramanahan.rpl22%40gmail.com"><img class="contact4" src="Gambar/email.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
